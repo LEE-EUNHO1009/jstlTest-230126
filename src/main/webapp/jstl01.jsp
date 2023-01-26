@@ -36,5 +36,14 @@
 	</c:choose>
 	<hr>
 	<!-- for문 -->
+	<%
+		for(int i=1; i<=10;i=i+2){ //i=1,3,5,7,9
+			out.print("안녕하세요."+i);
+		}
+	%>
+	<br>
+	<c:forEach begin="1" end="5" step="2">
+		안녕하세요${i }
+	</c:forEach>
 </body>
 </html>
